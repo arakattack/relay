@@ -3,6 +3,7 @@ version: '3.8'
 services:
   relay:
     image: hyvor/relay:0.0.45
+    hostname: relay-server
     restart: unless-stopped
     # network_mode: host DIHAPUS agar tidak bentrok dengan Traefik/Coolify
     ports:
